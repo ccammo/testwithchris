@@ -4,8 +4,8 @@ public class ChiliToGo
 {
    public static void main(String[] args)
    {
-	  /* User input string values for counts*/
-    String adultCount, childCount;
+	/* User input string values for counts*/
+    String adultString, childString;
 	int adultPrice = 7;
 	int childPrice = 4;
 	/* These are the converted integer values of user input*/
@@ -14,10 +14,10 @@ public class ChiliToGo
 	
 	JOptionPane.showMessageDialog(null,"The price of an adult meal is $7.");
     JOptionPane.showMessageDialog(null,"The price of a children's meal is $4.");
-		adultCount = JOptionPane.showInputDialog("How many adult meals would you like to purchase?", "Adult Meals");
-		adult = Integer.parseInt(adultCount);
-		childCount = JOptionPane.showInputDialog("How many children's meals would you like to purchase?", "Children's Meals");
-		child = Integer.parseInt(childCount);
+		adultString = JOptionPane.showInputDialog("How many adult meals would you like to purchase?", "Adult Meals");
+		adult = Integer.parseInt(adultString);
+		childString = JOptionPane.showInputDialog("How many children's meals would you like to purchase?", "Children's Meals");
+		child = Integer.parseInt(childString);
 		
 		JOptionPane.showMessageDialog(null,"Your total for adult meals is $" + adult * adultPrice);
 		
