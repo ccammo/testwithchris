@@ -1,0 +1,28 @@
+import javax.swing.JOptionPane;
+
+public class ChiliToGo	
+{
+   public static void main(String[] args)
+   {
+	  /* User input string values for counts*/
+    String adultCount, childCount;
+	int adultPrice = 7;
+	int childPrice = 4;
+	/* These are the converted integer values of user input*/
+	int adult;
+	int child;
+	
+	JOptionPane.showMessageDialog(null,"The price of an adult meal is $7.");
+    JOptionPane.showMessageDialog(null,"The price of a children's meal is $4.");
+		adultCount = JOptionPane.showInputDialog("How many adult meals would you like to purchase?", "Adult Meals");
+		adult = Integer.parseInt(adultCount);
+		childCount = JOptionPane.showInputDialog("How many children's meals would you like to purchase?", "Children's Meals");
+		child = Integer.parseInt(childCount);
+		
+		JOptionPane.showMessageDialog(null,"Your total for adult meals is $" + adult * adultPrice);
+		
+		JOptionPane.showMessageDialog(null,"Your total for children's meals is $" + child * childPrice);
+		/*Total is combination of both integers*/
+		JOptionPane.showMessageDialog(null,"Your total comes to $" + (adult * adultPrice + child * childPrice));		
+   }
+}
